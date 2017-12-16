@@ -7,5 +7,13 @@
 <body>
 <script type="text/javascript"
         src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" charset="utf-8" data-callback="true"></script>
+<script>
+  setTimeout(function(){
+    QC.Login.getMe(function(openId, accessToken){
+      console.log(openId);
+      console.log(accessToken);
+    })
+  },5000)
+</script>
 </body>
 </html>
